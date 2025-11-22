@@ -18,7 +18,7 @@ spring:
   kafka:
     bootstrap-servers: localhost:9092
     consumer:
-      group-id: midas-task3
+      group-id: midas-task4
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
@@ -31,3 +31,4 @@ spring:
 
 general:
   kafka-topic: midas-transactions
+  incentive-url: http://localhost:8080/incentive
